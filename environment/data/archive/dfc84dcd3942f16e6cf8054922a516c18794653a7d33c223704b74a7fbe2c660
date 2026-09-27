@@ -1,0 +1,23 @@
+{"seq":100,"bundle":"vendors.js","namespace":"common","key":"m3","op":"put","pattern":"{count, plural, =0 {No items} one {{name} has one item} other {{name} has {count, number} items}}"}
+{"seq":110,"bundle":"vendors.js","namespace":"common","key":"m5","op":"put","pattern":"{mode, select, compact {{count, number}} detailed {{count, number} items updated {when, date}} other {{label}}}"}
+{"seq":120,"bundle":"shell-a.js","namespace":"checkout","key":"m1","op":"put","pattern":"Hello {name}"}
+{"seq":130,"bundle":"shell-a.js","namespace":"checkout","key":"m3","op":"put","pattern":"{count, plural, =0 {No items} one {{name} has one item} other {{name} has {count, number} items}}"}
+{"seq":140,"bundle":"shell-a.js","namespace":"checkout","key":"m5","op":"remove"}
+{"seq":150,"bundle":"shell-a.js","namespace":"account","key":"m1","op":"put","pattern":"{rank, selectordinal, one {{name} is #st} two {{name} is #nd} few {{name} is #rd} other {{name} is #th}}"}
+{"seq":160,"bundle":"shell-a.js","namespace":"account","key":"m2","op":"put","pattern":"{state, select, ready {{count, plural, one {One ready item} other {{count, number} ready items}}} delayed {Delayed until {when, date}} other {{label}}}"}
+{"seq":170,"bundle":"shell-a.js","namespace":"account","key":"m4","op":"put","pattern":"Hello {name}"}
+{"seq":180,"bundle":"shell-a.js","namespace":"account","key":"m5","op":"put","pattern":"{count, number} items {legacy}"}
+{"seq":190,"bundle":"shell-a.js","namespace":"search","key":"m4","op":"put","pattern":"{rank, selectordinal, one {{name} is #st} two {{name} is #nd} few {{name} is #rd} other {{name} is #th}}"}
+{"seq":200,"bundle":"shell-b.js","namespace":"admin","key":"m2","op":"put","pattern":"Hello {name}"}
+{"seq":210,"bundle":"shell-b.js","namespace":"admin","key":"m4","op":"put","pattern":"{count, plural, =0 {No items} one {{name} has one item} other {{name} has {count, number} items}} {legacy}"}
+{"seq":220,"bundle":"shell-b.js","namespace":"admin","key":"m5","op":"put","pattern":"{tone, select, formal {Welcome {name}} casual {Hi {name}} other {Hello {name}}}"}
+{"seq":230,"bundle":"shell-b.js","namespace":"reports","key":"m1","op":"put","pattern":"{mode, select, compact {{count, number}} detailed {{count, number} items updated {when, date}} other {{label}}}"}
+{"seq":240,"bundle":"shell-b.js","namespace":"reports","key":"m3","op":"put","pattern":"{state, select, ready {{count, plural, one {One ready item} other {{count, number} ready items}}} delayed {Delayed until {when, date}} other {{label}}}"}
+{"seq":250,"bundle":"shell-b.js","namespace":"reports","key":"m5","op":"put","pattern":"Hello {name}"}
+{"seq":260,"bundle":"shell-b.js","namespace":"onboarding","key":"m3","op":"put","pattern":"{tone, select, formal {Welcome {name}} casual {Hi {name}} other {Hello {name}}}"}
+{"seq":270,"bundle":"shell-b.js","namespace":"onboarding","key":"m4","op":"put","pattern":"{mode, select, compact {{count, number}} detailed {{count, number} items updated {when, date}} other {{label}}}"}
+{"seq":1060,"bundle":"lazy-a.js","namespace":"account","key":"m2","op":"put","pattern":"{state, select, ready {{count, plural, one {One ready item} other {{count, number} ready items}}} delayed {Delayed until {when, date}} other {{label}}}"}
+{"seq":1110,"bundle":"lazy-b.js","namespace":"admin","key":"m4","op":"put","pattern":"{count, plural, =0 {No items} one {{name} has one item} other {{name} has {count, number} items}} {legacy} {routeContext}"}
+{"seq":1160,"bundle":"lazy-b.js","namespace":"onboarding","key":"m3","op":"put","pattern":"{tone, select, formal {Welcome {name}} casual {Hi {name}} other {Hello {name}}}"}
+{"seq":2040,"bundle":"lazy-a.js","namespace":"checkout","key":"m5","op":"remove"}
+{"seq":2150,"bundle":"lazy-b.js","namespace":"reports","key":"m5","op":"remove"}

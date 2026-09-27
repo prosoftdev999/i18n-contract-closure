@@ -1,0 +1,30 @@
+artifacts = ["/app/output/i18n_contract.json"]
+
+[task]
+name = "afterquery/i18n-contract-closure"
+
+[metadata]
+author_name = "Thomas Morison"
+author_email = "matiasv931026@gmail.com"
+difficulty_explanation = "The task couples four stateful frontend subsystems. First, the audited tab's diagnostic responses must be reconstructed across long-lived Service Worker controllers and a shared cache with background writes. Second, the page survives a sequence of webpack hot updates whose acceptance depends on the current chunk-parent graph and mounted entrypoint; accepted updates mutate chunk/source-map/catalog state while rejected updates replace it with a captured reload snapshot. Third, the same HMR history mutates a browser import map whose already-resolved `(referrer, specifier)` edges remain cached until reload, while first-evaluation module side effects persist globally and change later catalog resolution. This creates genuine cross-route history: a map installed at one checkpoint can be irrelevant for an edge already resolved earlier, while a later reload can make that same map authoritative. Fourth, the recovered route modules and layered catalogs feed indexed/chained Source Map v3 attribution, code-split registry semantics, locale fallback barriers, ICU branch reachability, Intl.PluralRules, and callsite type compatibility. Ignoring module-map cache lifetime, evaluating routes independently, using final import-map state, ignoring HMR, using newest Service Worker responses, or dropping chained source maps changes large parts of the manifest. The dataset is synthetic but models a realistic long-lived SPA localization incident spanning Service Worker, HMR, browser module loading, source maps, and internationalization. A senior frontend platform/web-runtime engineer working with an internationalization engineer would typically need multiple work sessions to reconstruct and validate the state transitions and route/locale matrix."
+solution_explanation = "The reference reconstructs the audited client's Service Worker response snapshot and replays the captured webpack HMR session. In the same history it maintains the mutable import map, the per-page module-resolution cache, first-evaluation module side effects, and reload resets, so each route checkpoint yields its own webpack modules, import-map modules, source-map variants, and layered catalog state. It then maps extracted callsites through the appropriate indexed and inline Source Map v3 chain, computes route chunk closure, combines code-split, HMR, and evaluated-module catalog registrations, resolves locale fallback/tombstones/barriers, performs callsite-specific ICU analysis with Node Intl.PluralRules, checks argument types, and emits the route/locale manifest."
+verification_explanation = "The verifier reads only /app/output/i18n_contract.json and sealed expected data in the verifier image. It requires a regular non-symlink JSON artifact below 12 MB, validates the declared schema and uniqueness of route/locale and callsite identities, normalizes ordering of routes, modules, callsites, issues, and required-argument maps, and compares the complete semantic contents with sealed truth. It separately checks summary counts and complete callsite membership. Candidate code, status files, logs, and executable content are never imported or run. The harness initializes reward to 0 and writes 1 only after all pytest checks pass. No inequality or floating-point tolerance is used."
+category = "Software"
+subcategory = "Frontend"
+tags = ["service-worker", "webpack-hmr", "import-maps", "i18n", "source-maps", "webpack"]
+expert_time_estimate_hours = 22.0
+relevant_experience = "Senior frontend platform/web-runtime or internationalization engineering experience with Service Worker fetch lifecycles, CacheStorage races, webpack HMR acceptance/reload behavior, browser import maps and module-map cache lifetime, chunk graphs, indexed/chained Source Map v3 decoding, ICU MessageFormat, Intl.PluralRules, locale fallback, and callsite compatibility analysis."
+
+[verifier]
+timeout_sec = 180.0
+environment_mode = "separate"
+
+[agent]
+timeout_sec = 9000.0
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0

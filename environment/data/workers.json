@@ -1,0 +1,17 @@
+[
+  {
+    "worker_sha": "c7c59f8b1a2e",
+    "release": "r41",
+    "source": "workers/c7c59f8b1a2e.mjs"
+  },
+  {
+    "worker_sha": "91a5d32e77c4",
+    "release": "r42",
+    "source": "workers/91a5d32e77c4.mjs"
+  },
+  {
+    "worker_sha": "f0bb3dd41398",
+    "release": "r43",
+    "source": "workers/f0bb3dd41398.mjs"
+  }
+]

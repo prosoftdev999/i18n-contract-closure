@@ -1,0 +1,24 @@
+{
+  "cache_name": "diag-shared",
+  "entries": {
+    "/diag/callsites.jsonl": "0f4ed22936a064c4df0a9dc1239ac49be637bfd5c0b26f188a861dcb9eae4706",
+    "/diag/catalog/en.jsonl": "a4f09cbf0fed3c71d680fdd185056fa36603d8af809f3dbfe22307548acabede",
+    "/diag/catalog/es.jsonl": "85c40799bbc4e12abbb7d28151d79e48b6524c087c51eec33e824e40d24178ba",
+    "/diag/catalog/fr-CA.jsonl": "d31458dd470c775cf28bda55f0d6c980c7e8ee8aff6a643872e1a1e03b4a3caa",
+    "/diag/catalog/fr.jsonl": "641a7001604c13be7918f8d53f33cd169f5488539b96110099c77c31436e1ec8",
+    "/diag/catalog/ja-JP.jsonl": "dfc84dcd3942f16e6cf8054922a516c18794653a7d33c223704b74a7fbe2c660",
+    "/diag/catalog/ja.jsonl": "adad6a94672fed7419bcc0944f3c0de96cdd38f1f120c5db01b9b6be14c413a8",
+    "/diag/catalog/pt-BR.jsonl": "3a8f9e23376dc2fc6f94d3244edee3616bda39fa6d6c26a1c9c69f8c8a53e9c7",
+    "/diag/catalog/pt.jsonl": "1d20f5b949fb1d763c943f5804139bd52098b348deaf522b1ad7ab0a678e002e",
+    "/diag/catalog/zh-Hant-HK.jsonl": "126c92808fdf3d83d76f16911640709029e8588441a8b9b930235075ae2043d9",
+    "/diag/catalog/zh-Hant.jsonl": "204aa6802ac6f0e5ac9e83329a573391f96d0abeee74f05df067b65db60ddc1a",
+    "/diag/catalog/zh.jsonl": "3dcdfa4f011111b65c473a0f66b3d41fbc99222179829bcd22995dc9109f0408",
+    "/diag/locale_graph.json": "518e365861919300913377c7529a8d589b7d82e0ca25046cb1bb497017066521",
+    "/diag/maps/lazy-a.js.map": "d914a1b66cf8a6b9139d0846a1d24c2da998b9f89631d043d888f40c8298dc66",
+    "/diag/maps/runtime.js.map": "7a040cec5d85b74e1d042d1b4a265fa061d52be6ab2d2275d635c38a186d8042",
+    "/diag/maps/shell-a.js.map": "77a88395880f07f6a80cb6e5f97f8de8d0c087f6aabe6417bd1dacad7972f680",
+    "/diag/maps/vendors.js.map": "2622057eb42f352cdcdf6d347c634b4a607f1a355243972a4b12b73484173ee5",
+    "/diag/routes.json": "5062fd3250378d185b8d2e3537f7d053a7e1b5f5e638d4d2b1a976cf917bae51",
+    "/diag/stats.json": "dbab63fc47f847a2a242377d76931dd1207da6a6b97444509936fd8afedafdc8"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "base_url": "https://app.local/",
+  "route_roots": {
+    "checkout": "https://app.local/routes/checkout/entry.js",
+    "admin": "https://app.local/routes/admin/entry.js",
+    "account": "https://app.local/routes/account/entry.js",
+    "reports": "https://app.local/routes/reports/entry.js",
+    "search": "https://app.local/routes/search/entry.js",
+    "onboarding": "https://app.local/routes/onboarding/entry.js"
+  },
+  "map": {
+    "imports": {
+      "@i18n/shared": "/mods/shared-a.js",
+      "@i18n/format": "/mods/format-a.js",
+      "@i18n/plural": "/mods/plural-a.js"
+    },
+    "scopes": {
+      "https://app.local/routes/checkout/": {
+        "@i18n/route": "/mods/checkout-a.js"
+      },
+      "https://app.local/routes/admin/": {
+        "@i18n/route": "/mods/admin-a.js"
+      },
+      "https://app.local/routes/account/": {
+        "@i18n/route": "/mods/account-a.js"
+      },
+      "https://app.local/routes/reports/": {
+        "@i18n/route": "/mods/reports-a.js"
+      },
+      "https://app.local/routes/search/": {
+        "@i18n/route": "/mods/search-a.js"
+      },
+      "https://app.local/routes/onboarding/": {
+        "@i18n/route": "/mods/onboarding-a.js"
+      }
+    }
+  }
+}

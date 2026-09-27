@@ -1,0 +1,238 @@
+{
+  "reload-r42a": {
+    "chunks": {
+      "runtime.js": {
+        "modules": [
+          "src/.hot/v1/features/Feature1.tsx",
+          "src/.hot/v1/features/Feature3.tsx",
+          "src/.hot/v1/features/Feature5.tsx",
+          "src/.hot/v1/routes/Account5.tsx",
+          "src/.hot/v1/routes/Account6.tsx",
+          "src/.hot/v1/routes/Checkout5.tsx",
+          "src/.hot/v1/routes/Checkout6.tsx",
+          "src/.hot/v1/routes/Search5.tsx",
+          "src/.hot/v1/routes/Search6.tsx"
+        ],
+        "children": []
+      },
+      "vendors.js": {
+        "modules": [
+          "src/.hot/v1/features/Feature2.tsx",
+          "src/.hot/v1/features/Feature4.tsx",
+          "src/.hot/v1/features/Feature6.tsx",
+          "src/.hot/v1/routes/Admin5.tsx",
+          "src/.hot/v1/routes/Admin6.tsx",
+          "src/.hot/v1/routes/Onboarding5.tsx",
+          "src/.hot/v1/routes/Onboarding6.tsx",
+          "src/.hot/v1/routes/Reports5.tsx",
+          "src/.hot/v1/routes/Reports6.tsx"
+        ],
+        "children": []
+      },
+      "shell-a.js": {
+        "modules": [
+          "src/.hot/v1/shared/Common5.tsx",
+          "src/.hot/v1/shared/Common6.tsx",
+          "src/.hot/v1/shared/Common7.tsx",
+          "src/.hot/v1/shared/Common8.tsx"
+        ],
+        "children": [
+          "lazy-a.js"
+        ]
+      },
+      "shell-b.js": {
+        "modules": [
+          "src/shared/Common1.tsx",
+          "src/shared/Common2.tsx",
+          "src/shared/Common3.tsx",
+          "src/shared/Common4.tsx"
+        ],
+        "children": [
+          "lazy-b.js"
+        ]
+      },
+      "lazy-a.js": {
+        "modules": [
+          "src/.hot/v1/routes/Account1.tsx",
+          "src/.hot/v1/routes/Account2.tsx",
+          "src/.hot/v1/routes/Account3.tsx",
+          "src/.hot/v1/routes/Account4.tsx",
+          "src/.hot/v1/routes/Checkout1.tsx",
+          "src/.hot/v1/routes/Checkout2.tsx",
+          "src/.hot/v1/routes/Checkout3.tsx",
+          "src/.hot/v1/routes/Checkout4.tsx",
+          "src/.hot/v1/routes/Search1.tsx",
+          "src/.hot/v1/routes/Search2.tsx",
+          "src/.hot/v1/routes/Search3.tsx",
+          "src/.hot/v1/routes/Search4.tsx"
+        ],
+        "children": []
+      },
+      "lazy-b.js": {
+        "modules": [
+          "src/routes/Admin1.tsx",
+          "src/routes/Admin2.tsx",
+          "src/routes/Admin3.tsx",
+          "src/routes/Admin4.tsx",
+          "src/routes/Onboarding1.tsx",
+          "src/routes/Onboarding2.tsx",
+          "src/routes/Onboarding3.tsx",
+          "src/routes/Onboarding4.tsx",
+          "src/routes/Reports1.tsx",
+          "src/routes/Reports2.tsx",
+          "src/routes/Reports3.tsx",
+          "src/routes/Reports4.tsx"
+        ],
+        "children": []
+      }
+    },
+    "map_variants": {
+      "runtime.js": "v1",
+      "vendors.js": "v1",
+      "shell-a.js": "v1",
+      "shell-b.js": "base",
+      "lazy-a.js": "v1",
+      "lazy-b.js": "base"
+    },
+    "catalog_overlay": [
+      {
+        "locale": "en",
+        "namespace": "common",
+        "key": "m3",
+        "op": "put",
+        "pattern": "{count, plural, =0 {No items} one {{name} has one item} other {{name} has {count, number} items}} {hotLabel}"
+      },
+      {
+        "locale": "fr",
+        "namespace": "reports",
+        "key": "m2",
+        "op": "remove"
+      },
+      {
+        "locale": "ja",
+        "namespace": "onboarding",
+        "key": "m4",
+        "op": "put",
+        "pattern": "{mode, select, compact {{count, number}} detailed {{count, number} {when, date}} other {{label}}} {hotLabel}"
+      }
+    ]
+  },
+  "reload-r42b": {
+    "chunks": {
+      "runtime.js": {
+        "modules": [
+          "src/.hot/v2/features/Feature1.tsx",
+          "src/.hot/v2/features/Feature3.tsx",
+          "src/.hot/v2/features/Feature5.tsx",
+          "src/.hot/v2/routes/Account5.tsx",
+          "src/.hot/v2/routes/Account6.tsx",
+          "src/.hot/v2/routes/Checkout5.tsx",
+          "src/.hot/v2/routes/Checkout6.tsx",
+          "src/.hot/v2/routes/Search5.tsx",
+          "src/.hot/v2/routes/Search6.tsx"
+        ],
+        "children": []
+      },
+      "vendors.js": {
+        "modules": [
+          "src/.hot/v2/features/Feature2.tsx",
+          "src/.hot/v2/features/Feature4.tsx",
+          "src/.hot/v2/features/Feature6.tsx",
+          "src/.hot/v2/routes/Admin5.tsx",
+          "src/.hot/v2/routes/Admin6.tsx",
+          "src/.hot/v2/routes/Onboarding5.tsx",
+          "src/.hot/v2/routes/Onboarding6.tsx",
+          "src/.hot/v2/routes/Reports5.tsx",
+          "src/.hot/v2/routes/Reports6.tsx"
+        ],
+        "children": []
+      },
+      "shell-a.js": {
+        "modules": [
+          "src/.hot/v2/shared/Common5.tsx",
+          "src/.hot/v2/shared/Common6.tsx",
+          "src/.hot/v2/shared/Common7.tsx",
+          "src/.hot/v2/shared/Common8.tsx"
+        ],
+        "children": [
+          "lazy-a.js"
+        ]
+      },
+      "shell-b.js": {
+        "modules": [
+          "src/.hot/v2/shared/Common1.tsx",
+          "src/.hot/v2/shared/Common2.tsx",
+          "src/.hot/v2/shared/Common3.tsx",
+          "src/.hot/v2/shared/Common4.tsx"
+        ],
+        "children": [
+          "lazy-b.js"
+        ]
+      },
+      "lazy-a.js": {
+        "modules": [
+          "src/routes/Account1.tsx",
+          "src/routes/Account2.tsx",
+          "src/routes/Account3.tsx",
+          "src/routes/Account4.tsx",
+          "src/routes/Checkout1.tsx",
+          "src/routes/Checkout2.tsx",
+          "src/routes/Checkout3.tsx",
+          "src/routes/Checkout4.tsx",
+          "src/routes/Search1.tsx",
+          "src/routes/Search2.tsx",
+          "src/routes/Search3.tsx",
+          "src/routes/Search4.tsx"
+        ],
+        "children": []
+      },
+      "lazy-b.js": {
+        "modules": [
+          "src/.hot/v2/routes/Admin1.tsx",
+          "src/.hot/v2/routes/Admin2.tsx",
+          "src/.hot/v2/routes/Admin3.tsx",
+          "src/.hot/v2/routes/Admin4.tsx",
+          "src/.hot/v2/routes/Onboarding1.tsx",
+          "src/.hot/v2/routes/Onboarding2.tsx",
+          "src/.hot/v2/routes/Onboarding3.tsx",
+          "src/.hot/v2/routes/Onboarding4.tsx",
+          "src/.hot/v2/routes/Reports1.tsx",
+          "src/.hot/v2/routes/Reports2.tsx",
+          "src/.hot/v2/routes/Reports3.tsx",
+          "src/.hot/v2/routes/Reports4.tsx"
+        ],
+        "children": []
+      }
+    },
+    "map_variants": {
+      "runtime.js": "v2",
+      "vendors.js": "v2",
+      "shell-a.js": "v2",
+      "shell-b.js": "v2",
+      "lazy-a.js": "base",
+      "lazy-b.js": "v2"
+    },
+    "catalog_overlay": [
+      {
+        "locale": "en",
+        "namespace": "checkout",
+        "key": "m4",
+        "op": "put",
+        "pattern": "{tone, select, formal {Welcome {name}} casual {Hi {name}} other {Hello {name}}} {releaseBadge}"
+      },
+      {
+        "locale": "es",
+        "namespace": "common",
+        "key": "m7",
+        "op": "remove"
+      },
+      {
+        "locale": "zh",
+        "namespace": "reports",
+        "key": "m1",
+        "op": "put",
+        "pattern": "{mode, select, compact {{count, number}} detailed {{count, number} {when, date}} other {{label}}} {releaseBadge}"
+      }
+    ]
+  }
+}

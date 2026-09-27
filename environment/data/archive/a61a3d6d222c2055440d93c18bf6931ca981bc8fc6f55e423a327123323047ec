@@ -1,0 +1,48 @@
+{
+  "requested_locales": [
+    "en-US",
+    "en-GB",
+    "fr-CA",
+    "fr-FR",
+    "pt-BR",
+    "es-MX",
+    "zh-HK",
+    "ja-JP"
+  ],
+  "aliases": {
+    "en-UK": "en-GB",
+    "pt": "pt-PT",
+    "zh-HK": "zh-Hant-HK"
+  },
+  "parents": {
+    "en-US": "en",
+    "en-GB": "en",
+    "fr-CA": "en",
+    "fr-FR": "fr",
+    "pt-BR": "pt",
+    "pt": "en",
+    "es-MX": "es",
+    "zh-Hant-HK": "zh-Hant",
+    "zh-Hant": "zh",
+    "ja-JP": "ja",
+    "en": null,
+    "fr": "en",
+    "es": "en",
+    "zh": "en",
+    "ja": "en"
+  },
+  "fallback_barriers": [
+    {
+      "locale": "fr-CA",
+      "namespace": "account"
+    },
+    {
+      "locale": "zh-Hant",
+      "namespace": "reports"
+    },
+    {
+      "locale": "pt-BR",
+      "namespace": "checkout"
+    }
+  ]
+}

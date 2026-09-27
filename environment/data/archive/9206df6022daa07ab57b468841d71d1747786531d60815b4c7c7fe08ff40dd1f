@@ -1,0 +1,133 @@
+{
+  "release": "r43",
+  "entrypoints": {
+    "checkout": {
+      "initial": [
+        "runtime.js",
+        "vendors.js",
+        "shell-a.js"
+      ]
+    },
+    "account": {
+      "initial": [
+        "runtime.js",
+        "vendors.js",
+        "shell-a.js"
+      ]
+    },
+    "search": {
+      "initial": [
+        "runtime.js",
+        "vendors.js",
+        "shell-a.js"
+      ]
+    },
+    "admin": {
+      "initial": [
+        "runtime.js",
+        "vendors.js",
+        "shell-b.js"
+      ]
+    },
+    "reports": {
+      "initial": [
+        "runtime.js",
+        "vendors.js",
+        "shell-b.js"
+      ]
+    },
+    "onboarding": {
+      "initial": [
+        "runtime.js",
+        "vendors.js",
+        "shell-b.js"
+      ]
+    }
+  },
+  "chunks": {
+    "runtime.js": {
+      "modules": [
+        "src/features/Feature1.tsx",
+        "src/features/Feature3.tsx",
+        "src/features/Feature5.tsx",
+        "src/routes/Account5.tsx",
+        "src/routes/Account6.tsx",
+        "src/routes/Checkout5.tsx",
+        "src/routes/Checkout6.tsx",
+        "src/routes/Search5.tsx",
+        "src/routes/Search6.tsx"
+      ],
+      "children": []
+    },
+    "vendors.js": {
+      "modules": [
+        "src/features/Feature2.tsx",
+        "src/features/Feature4.tsx",
+        "src/features/Feature6.tsx",
+        "src/routes/Admin5.tsx",
+        "src/routes/Admin6.tsx",
+        "src/routes/Onboarding5.tsx",
+        "src/routes/Onboarding6.tsx",
+        "src/routes/Reports5.tsx",
+        "src/routes/Reports6.tsx"
+      ],
+      "children": []
+    },
+    "shell-a.js": {
+      "modules": [
+        "src/shared/Common5.tsx",
+        "src/shared/Common6.tsx",
+        "src/shared/Common7.tsx",
+        "src/shared/Common8.tsx"
+      ],
+      "children": [
+        "lazy-a.js"
+      ]
+    },
+    "shell-b.js": {
+      "modules": [
+        "src/shared/Common1.tsx",
+        "src/shared/Common2.tsx",
+        "src/shared/Common3.tsx",
+        "src/shared/Common4.tsx"
+      ],
+      "children": [
+        "lazy-b.js"
+      ]
+    },
+    "lazy-a.js": {
+      "modules": [
+        "src/routes/Account1.tsx",
+        "src/routes/Account2.tsx",
+        "src/routes/Account3.tsx",
+        "src/routes/Account4.tsx",
+        "src/routes/Checkout1.tsx",
+        "src/routes/Checkout2.tsx",
+        "src/routes/Checkout3.tsx",
+        "src/routes/Checkout4.tsx",
+        "src/routes/Search1.tsx",
+        "src/routes/Search2.tsx",
+        "src/routes/Search3.tsx",
+        "src/routes/Search4.tsx"
+      ],
+      "children": []
+    },
+    "lazy-b.js": {
+      "modules": [
+        "src/routes/Admin1.tsx",
+        "src/routes/Admin2.tsx",
+        "src/routes/Admin3.tsx",
+        "src/routes/Admin4.tsx",
+        "src/routes/Onboarding1.tsx",
+        "src/routes/Onboarding2.tsx",
+        "src/routes/Onboarding3.tsx",
+        "src/routes/Onboarding4.tsx",
+        "src/routes/Reports1.tsx",
+        "src/routes/Reports2.tsx",
+        "src/routes/Reports3.tsx",
+        "src/routes/Reports4.tsx"
+      ],
+      "children": []
+    }
+  }
+}

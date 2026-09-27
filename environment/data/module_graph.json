@@ -1,0 +1,485 @@
+{
+  "https://app.local/routes/checkout/entry.js": {
+    "source_module": "src/runtime-entry/checkout.ts",
+    "deps": [
+      "@i18n/shared",
+      "@i18n/route"
+    ],
+    "catalog_ops": []
+  },
+  "https://app.local/routes/admin/entry.js": {
+    "source_module": "src/runtime-entry/admin.ts",
+    "deps": [
+      "@i18n/shared",
+      "@i18n/route"
+    ],
+    "catalog_ops": []
+  },
+  "https://app.local/routes/account/entry.js": {
+    "source_module": "src/runtime-entry/account.ts",
+    "deps": [
+      "@i18n/shared",
+      "@i18n/route"
+    ],
+    "catalog_ops": []
+  },
+  "https://app.local/routes/reports/entry.js": {
+    "source_module": "src/runtime-entry/reports.ts",
+    "deps": [
+      "@i18n/shared",
+      "@i18n/route"
+    ],
+    "catalog_ops": []
+  },
+  "https://app.local/routes/search/entry.js": {
+    "source_module": "src/runtime-entry/search.ts",
+    "deps": [
+      "@i18n/shared",
+      "@i18n/route"
+    ],
+    "catalog_ops": []
+  },
+  "https://app.local/routes/onboarding/entry.js": {
+    "source_module": "src/runtime-entry/onboarding.ts",
+    "deps": [
+      "@i18n/shared",
+      "@i18n/route"
+    ],
+    "catalog_ops": []
+  },
+  "https://app.local/mods/shared-a.js": {
+    "source_module": "src/i18n/runtime/SharedA.ts",
+    "deps": [
+      "@i18n/format",
+      "@i18n/plural"
+    ],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "common",
+        "key": "m5",
+        "op": "put",
+        "pattern": "{mode, select, compact {{count, number}} detailed {{count, number} {when, date}} other {{label}}} {sharedA}"
+      }
+    ]
+  },
+  "https://app.local/mods/shared-b.js": {
+    "source_module": "src/i18n/runtime/SharedB.ts",
+    "deps": [
+      "@i18n/plural",
+      "@i18n/format"
+    ],
+    "catalog_ops": [
+      {
+        "locale": "fr",
+        "namespace": "common",
+        "key": "m3",
+        "op": "remove"
+      },
+      {
+        "locale": "es",
+        "namespace": "common",
+        "key": "m2",
+        "op": "put",
+        "pattern": "{count, number} items {sharedB}"
+      }
+    ]
+  },
+  "https://app.local/mods/shared-c.js": {
+    "source_module": "src/i18n/runtime/SharedC.ts",
+    "deps": [
+      "@i18n/format",
+      "@i18n/plural"
+    ],
+    "catalog_ops": [
+      {
+        "locale": "ja",
+        "namespace": "common",
+        "key": "m4",
+        "op": "put",
+        "pattern": "{tone, select, formal {Welcome {name}} casual {Hi {name}} other {Hello {name}}} {sharedC}"
+      }
+    ]
+  },
+  "https://app.local/mods/format-a.js": {
+    "source_module": "src/i18n/runtime/FormatA.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "common",
+        "key": "m1",
+        "op": "put",
+        "pattern": "Hello {name} {fmtA}"
+      },
+      {
+        "locale": "pt-BR",
+        "namespace": "common",
+        "key": "m6",
+        "op": "put",
+        "pattern": "{rank, selectordinal, one {{name} is #st} other {{name} is #th}} {fmtA}"
+      }
+    ]
+  },
+  "https://app.local/mods/format-b.js": {
+    "source_module": "src/i18n/runtime/FormatB.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "common",
+        "key": "m1",
+        "op": "put",
+        "pattern": "Hello {name} {fmtB}"
+      },
+      {
+        "locale": "zh",
+        "namespace": "common",
+        "key": "m8",
+        "op": "remove"
+      }
+    ]
+  },
+  "https://app.local/mods/format-c.js": {
+    "source_module": "src/i18n/runtime/FormatC.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "common",
+        "key": "m1",
+        "op": "put",
+        "pattern": "Hello {name} {fmtC}"
+      },
+      {
+        "locale": "fr",
+        "namespace": "common",
+        "key": "m2",
+        "op": "put",
+        "pattern": "{count, number} items {fmtC}"
+      }
+    ]
+  },
+  "https://app.local/mods/plural-a.js": {
+    "source_module": "src/i18n/runtime/PluralA.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "common",
+        "key": "m3",
+        "op": "put",
+        "pattern": "{count, plural, =0 {No items} one {{name} has one item} other {{name} has {count, number} items}} {pluralA}"
+      }
+    ]
+  },
+  "https://app.local/mods/plural-b.js": {
+    "source_module": "src/i18n/runtime/PluralB.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "es",
+        "namespace": "common",
+        "key": "m4",
+        "op": "remove"
+      },
+      {
+        "locale": "en",
+        "namespace": "common",
+        "key": "m6",
+        "op": "put",
+        "pattern": "{rank, selectordinal, one {{name} is #st} two {{name} is #nd} few {{name} is #rd} other {{name} is #th}} {pluralB}"
+      }
+    ]
+  },
+  "https://app.local/mods/plural-c.js": {
+    "source_module": "src/i18n/runtime/PluralC.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "zh",
+        "namespace": "common",
+        "key": "m5",
+        "op": "put",
+        "pattern": "{mode, select, compact {{count, number}} detailed {{count, number} {when, date}} other {{label}}} {pluralC}"
+      }
+    ]
+  },
+  "https://app.local/mods/checkout-a.js": {
+    "source_module": "src/i18n/adapters/CheckoutA.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "checkout",
+        "key": "m2",
+        "op": "put",
+        "pattern": "{count, number} items {checkoutA}"
+      }
+    ]
+  },
+  "https://app.local/mods/checkout-b.js": {
+    "source_module": "src/i18n/adapters/CheckoutB.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "checkout",
+        "key": "m2",
+        "op": "put",
+        "pattern": "{count, number} items {checkoutB}"
+      },
+      {
+        "locale": "fr",
+        "namespace": "checkout",
+        "key": "m1",
+        "op": "remove"
+      }
+    ]
+  },
+  "https://app.local/mods/checkout-c.js": {
+    "source_module": "src/i18n/adapters/CheckoutC.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "checkout",
+        "key": "m4",
+        "op": "put",
+        "pattern": "{tone, select, formal {Welcome {name}} casual {Hi {name}} other {Hello {name}}} {checkoutC}"
+      }
+    ]
+  },
+  "https://app.local/mods/admin-a.js": {
+    "source_module": "src/i18n/adapters/AdminA.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "admin",
+        "key": "m2",
+        "op": "put",
+        "pattern": "Hello {name} {adminA}"
+      }
+    ]
+  },
+  "https://app.local/mods/admin-b.js": {
+    "source_module": "src/i18n/adapters/AdminB.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "admin",
+        "key": "m2",
+        "op": "put",
+        "pattern": "Hello {name} {adminB}"
+      },
+      {
+        "locale": "ja",
+        "namespace": "admin",
+        "key": "m5",
+        "op": "remove"
+      }
+    ]
+  },
+  "https://app.local/mods/admin-c.js": {
+    "source_module": "src/i18n/adapters/AdminC.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "admin",
+        "key": "m4",
+        "op": "put",
+        "pattern": "{count, plural, one {{name} has one} other {{name} has {count, number}}} {adminC}"
+      }
+    ]
+  },
+  "https://app.local/mods/account-a.js": {
+    "source_module": "src/i18n/adapters/AccountA.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "account",
+        "key": "m4",
+        "op": "put",
+        "pattern": "Hello {name} {accountA}"
+      }
+    ]
+  },
+  "https://app.local/mods/account-b.js": {
+    "source_module": "src/i18n/adapters/AccountB.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "account",
+        "key": "m4",
+        "op": "put",
+        "pattern": "Hello {name} {accountB}"
+      },
+      {
+        "locale": "pt-BR",
+        "namespace": "account",
+        "key": "m3",
+        "op": "remove"
+      }
+    ]
+  },
+  "https://app.local/mods/account-c.js": {
+    "source_module": "src/i18n/adapters/AccountC.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "account",
+        "key": "m4",
+        "op": "put",
+        "pattern": "Hello {name} {accountC}"
+      },
+      {
+        "locale": "fr",
+        "namespace": "account",
+        "key": "m5",
+        "op": "put",
+        "pattern": "{count, number} items {accountC}"
+      }
+    ]
+  },
+  "https://app.local/mods/reports-a.js": {
+    "source_module": "src/i18n/adapters/ReportsA.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "reports",
+        "key": "m5",
+        "op": "put",
+        "pattern": "Hello {name} {reportsA}"
+      }
+    ]
+  },
+  "https://app.local/mods/reports-b.js": {
+    "source_module": "src/i18n/adapters/ReportsB.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "reports",
+        "key": "m5",
+        "op": "put",
+        "pattern": "Hello {name} {reportsB}"
+      }
+    ]
+  },
+  "https://app.local/mods/reports-c.js": {
+    "source_module": "src/i18n/adapters/ReportsC.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "reports",
+        "key": "m5",
+        "op": "put",
+        "pattern": "Hello {name} {reportsC}"
+      },
+      {
+        "locale": "zh",
+        "namespace": "reports",
+        "key": "m2",
+        "op": "remove"
+      }
+    ]
+  },
+  "https://app.local/mods/search-a.js": {
+    "source_module": "src/i18n/adapters/SearchA.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "search",
+        "key": "m2",
+        "op": "put",
+        "pattern": "{tone, select, formal {Welcome {name}} casual {Hi {name}} other {Hello {name}}} {searchA}"
+      }
+    ]
+  },
+  "https://app.local/mods/search-b.js": {
+    "source_module": "src/i18n/adapters/SearchB.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "search",
+        "key": "m2",
+        "op": "put",
+        "pattern": "{tone, select, formal {Welcome {name}} casual {Hi {name}} other {Hello {name}}} {searchB}"
+      },
+      {
+        "locale": "es",
+        "namespace": "search",
+        "key": "m4",
+        "op": "remove"
+      }
+    ]
+  },
+  "https://app.local/mods/search-c.js": {
+    "source_module": "src/i18n/adapters/SearchC.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "search",
+        "key": "m4",
+        "op": "put",
+        "pattern": "{rank, selectordinal, one {{name} is #st} other {{name} is #th}} {searchC}"
+      }
+    ]
+  },
+  "https://app.local/mods/onboarding-a.js": {
+    "source_module": "src/i18n/adapters/OnboardingA.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "onboarding",
+        "key": "m3",
+        "op": "put",
+        "pattern": "{tone, select, formal {Welcome {name}} casual {Hi {name}} other {Hello {name}}} {onboardA}"
+      }
+    ]
+  },
+  "https://app.local/mods/onboarding-b.js": {
+    "source_module": "src/i18n/adapters/OnboardingB.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "onboarding",
+        "key": "m3",
+        "op": "put",
+        "pattern": "{tone, select, formal {Welcome {name}} casual {Hi {name}} other {Hello {name}}} {onboardB}"
+      }
+    ]
+  },
+  "https://app.local/mods/onboarding-c.js": {
+    "source_module": "src/i18n/adapters/OnboardingC.ts",
+    "deps": [],
+    "catalog_ops": [
+      {
+        "locale": "en",
+        "namespace": "onboarding",
+        "key": "m3",
+        "op": "put",
+        "pattern": "{tone, select, formal {Welcome {name}} casual {Hi {name}} other {Hello {name}}} {onboardC}"
+      },
+      {
+        "locale": "fr",
+        "namespace": "onboarding",
+        "key": "m4",
+        "op": "remove"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "checkout": {
+    "entrypoint": "checkout"
+  },
+  "account": {
+    "entrypoint": "account"
+  },
+  "search": {
+    "entrypoint": "search"
+  },
+  "admin": {
+    "entrypoint": "reports"
+  },
+  "reports": {
+    "entrypoint": "admin"
+  },
+  "onboarding": {
+    "entrypoint": "onboarding"
+  }
+}

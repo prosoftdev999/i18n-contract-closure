@@ -1,0 +1,66 @@
+{
+  "reload-r42a": {
+    "map": {
+      "imports": {
+        "@i18n/shared": "/mods/shared-a.js",
+        "@i18n/format": "/mods/format-c.js",
+        "@i18n/plural": "/mods/plural-a.js"
+      },
+      "scopes": {
+        "https://app.local/routes/checkout/": {
+          "@i18n/route": "/mods/checkout-a.js"
+        },
+        "https://app.local/routes/admin/": {
+          "@i18n/route": "/mods/admin-a.js"
+        },
+        "https://app.local/routes/account/": {
+          "@i18n/route": "/mods/account-b.js"
+        },
+        "https://app.local/routes/reports/": {
+          "@i18n/route": "/mods/reports-a.js"
+        },
+        "https://app.local/routes/search/": {
+          "@i18n/route": "/mods/search-a.js"
+        },
+        "https://app.local/routes/onboarding/": {
+          "@i18n/route": "/mods/onboarding-a.js"
+        }
+      }
+    },
+    "preload": [
+      "https://app.local/mods/shared-a.js"
+    ]
+  },
+  "reload-r42b": {
+    "map": {
+      "imports": {
+        "@i18n/shared": "/mods/shared-c.js",
+        "@i18n/format": "/mods/format-b.js",
+        "@i18n/plural": "/mods/plural-c.js"
+      },
+      "scopes": {
+        "https://app.local/routes/checkout/": {
+          "@i18n/route": "/mods/checkout-a.js"
+        },
+        "https://app.local/routes/admin/": {
+          "@i18n/route": "/mods/admin-a.js"
+        },
+        "https://app.local/routes/account/": {
+          "@i18n/route": "/mods/account-a.js"
+        },
+        "https://app.local/routes/reports/": {
+          "@i18n/route": "/mods/reports-a.js"
+        },
+        "https://app.local/routes/search/": {
+          "@i18n/route": "/mods/search-a.js"
+        },
+        "https://app.local/routes/onboarding/": {
+          "@i18n/route": "/mods/onboarding-b.js"
+        }
+      }
+    },
+    "preload": [
+      "https://app.local/mods/shared-c.js"
+    ]
+  }
+}

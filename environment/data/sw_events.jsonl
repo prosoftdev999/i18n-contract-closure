@@ -1,0 +1,9 @@
+{"t_ms":0,"event":"activated","worker_sha":"c7c59f8b1a2e"}
+{"t_ms":100,"event":"client-open","client_id":"legacy-tab","controller_sha":"c7c59f8b1a2e"}
+{"t_ms":800,"event":"installed","worker_sha":"91a5d32e77c4"}
+{"t_ms":900,"event":"activated","worker_sha":"91a5d32e77c4"}
+{"t_ms":1000,"event":"client-open","client_id":"audit-17","controller_sha":"91a5d32e77c4"}
+{"t_ms":1050,"event":"client-open","client_id":"mid-tab","controller_sha":"91a5d32e77c4"}
+{"t_ms":4300,"event":"installed","worker_sha":"f0bb3dd41398"}
+{"t_ms":4400,"event":"activated","worker_sha":"f0bb3dd41398"}
+{"t_ms":4500,"event":"client-open","client_id":"new-tab","controller_sha":"f0bb3dd41398"}

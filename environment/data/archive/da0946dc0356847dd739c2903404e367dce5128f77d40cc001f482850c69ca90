@@ -1,0 +1,23 @@
+{"seq":100,"bundle":"vendors.js","namespace":"common","key":"m1","op":"put","pattern":"Hello {name}"}
+{"seq":110,"bundle":"vendors.js","namespace":"common","key":"m2","op":"put","pattern":"{count, number} items"}
+{"seq":120,"bundle":"vendors.js","namespace":"common","key":"m3","op":"put","pattern":"{count, plural, =0 {\u6c92\u6709\u9805\u76ee} other {{name} \u6709 {count, number} \u500b\u9805\u76ee}}"}
+{"seq":130,"bundle":"vendors.js","namespace":"common","key":"m4","op":"put","pattern":"{tone, select, formal {Welcome {name}} casual {Hi {name}} other {Hello {name}}}"}
+{"seq":140,"bundle":"shell-a.js","namespace":"checkout","key":"m1","op":"put","pattern":"Hello {name}"}
+{"seq":150,"bundle":"shell-a.js","namespace":"checkout","key":"m2","op":"put","pattern":"{count, number} items"}
+{"seq":160,"bundle":"shell-a.js","namespace":"checkout","key":"m5","op":"put","pattern":"{mode, select, compact {{count, number}} detailed {{count, number} items updated {when, date}} other {{label}}}"}
+{"seq":170,"bundle":"shell-a.js","namespace":"account","key":"m1","op":"put","pattern":"{rank, selectordinal, one {{name} is #st} two {{name} is #nd} few {{name} is #rd} other {{name} is #th}}"}
+{"seq":180,"bundle":"shell-a.js","namespace":"search","key":"m5","op":"put","pattern":"{state, select, ready {{count, plural, one {One ready item} other {{count, number} ready items}}} delayed {Delayed until {when, date}} other {{label}}}"}
+{"seq":190,"bundle":"shell-b.js","namespace":"admin","key":"m4","op":"put","pattern":"{count, plural, =0 {No items} one {{name} has one item} other {{name} has {count, number} items}}"}
+{"seq":200,"bundle":"shell-b.js","namespace":"admin","key":"m5","op":"put","pattern":"{tone, select, formal {Welcome {name}} casual {Hi {name}} other {Hello {name}}}"}
+{"seq":210,"bundle":"shell-b.js","namespace":"reports","key":"m2","op":"put","pattern":"{rank, selectordinal, one {{name} is #st} two {{name} is #nd} few {{name} is #rd} other {{name} is #th}}"}
+{"seq":220,"bundle":"shell-b.js","namespace":"reports","key":"m4","op":"put","pattern":"{gender, select, female {{name} updated her profile} male {{name} updated his profile} other {{name} updated their profile}}"}
+{"seq":230,"bundle":"shell-b.js","namespace":"reports","key":"m5","op":"put","pattern":"Hello {name}"}
+{"seq":240,"bundle":"shell-b.js","namespace":"onboarding","key":"m1","op":"put","pattern":"{count, number} items"}
+{"seq":250,"bundle":"shell-b.js","namespace":"onboarding","key":"m2","op":"put","pattern":"{count, plural, =0 {No items} one {{name} has one item} other {{name} has {count, number} items}}"}
+{"seq":260,"bundle":"shell-b.js","namespace":"onboarding","key":"m3","op":"put","pattern":"{count, plural, =0 {\u6c92\u6709\u9805\u76ee} other {{name} \u6709 {count, number} \u500b\u9805\u76ee}}"}
+{"seq":1060,"bundle":"lazy-a.js","namespace":"checkout","key":"m5","op":"put","pattern":"{mode, select, compact {{count, number}} detailed {{count, number} items updated {when, date}} other {{label}}}"}
+{"seq":1110,"bundle":"lazy-b.js","namespace":"reports","key":"m2","op":"put","pattern":"{rank, selectordinal, one {{name} is #st} two {{name} is #nd} few {{name} is #rd} other {{name} is #th}} {routeContext}"}
+{"seq":1160,"bundle":"lazy-b.js","namespace":"onboarding","key":"m3","op":"put","pattern":"{count, plural, =0 {\u6c92\u6709\u9805\u76ee} other {{name} \u6709 {count, number} \u500b\u9805\u76ee}}"}
+{"seq":1520,"bundle":"lazy-a.js","namespace":"common","key":"m3","op":"put","pattern":"{count, plural, =0 {\u6c92\u6709\u9805\u76ee} other {{name} \u6709 {count, number} \u500b\u9805\u76ee}} {surface}"}
+{"seq":2040,"bundle":"lazy-a.js","namespace":"checkout","key":"m1","op":"remove"}
+{"seq":2150,"bundle":"lazy-b.js","namespace":"onboarding","key":"m2","op":"remove"}

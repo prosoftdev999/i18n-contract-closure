@@ -1,0 +1,10 @@
+{
+  "accepts": {
+    "shell-a.js": [
+      "lazy-a.js"
+    ],
+    "shell-b.js": [
+      "lazy-b.js"
+    ]
+  }
+}
